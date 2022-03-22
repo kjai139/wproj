@@ -14,7 +14,7 @@ body {
 .header-pone {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px;
+    
 }
 .header-ptwo {
     display:flex;
