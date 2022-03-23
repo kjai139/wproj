@@ -12,6 +12,8 @@ body {
     
 }
 
+
+
 .header-pone {
     display: flex;
     justify-content: space-between;
@@ -21,34 +23,43 @@ body {
 .header-ptwo {
     display:flex;
     margin-top: 30px;
-    gap: 70px;
+    gap: 100px;
     justify-content: space-between;
 }
 
 .button-one {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
     border-radius: 5px;
-    border: 1px solid #3882F6;
+    border: 2px solid #3882F6;
     color: #E5E7EB;
     font-size: 18px;
     padding: 8px 18px;
+    margin: 0;
     font-family: sans-serif;
+    
     
 }
 
 .maintxt, .secondarytxt {
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-family: sans-serif;
 }
+
+
+
 
 .big-img {
     display:flex;
     width: 300px;
+    
 }
 
 .first-con {
     
     padding: 0 70px;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 
 }
 
@@ -64,6 +75,7 @@ body {
     color: #E5E7EB
 }
 
+
 .linktxt {
     display: flex;
     gap: 16px;
@@ -73,22 +85,42 @@ body {
     font-size: 48px;
     font-weight: bolder;
     color: #F9FAF8;
+    
 }
 
+.button-one {
+    width:62px;
+    
+
+    
+}
+
+
+
+
+
+
+.bothtxt{
+    display:flex;
+    flex-direction: column;
+
+}
 
 
 .button-one, .button-two, .sign-up{
     background-color: #3882F6;
 }
 
-ul {
+ul, a {
     list-style-type: None;
+    text-decoration: none;
+    color: #F9FAF8;
 }
 
 .imgz {
     display:flex;
     border: 5px solid #3882F6;
-    
+    width: 100%;
     border-radius: 10px;
     margin: 3px 0px;
     aspect-ratio: 1 / 1;  /*this retains the square fill */
@@ -153,7 +185,77 @@ ul {
     font-weight: bold;
     display:flex;
     justify-content: flex-end;
-    padding-right: 70px;
+    padding-right: 40px;
+    margin: 0 70px;
+}
+
+.fourth-cont {
+    padding: 70px;
+    
+}
+
+.sign-up {
+    display: flex;
+    padding: 70px 110px;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.button-two {
+    display:flex;
+    appearance:button;
+    border: 3px solid #F9FAF8;
+    border-radius: 5px;
+    width: 80px;
+    flex: 0 1 auto;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: sans-serif;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.sign-sen-one {
+    color: #F9FAF8;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.sign-sen-two {
+    color: #F9FAF8;
+    font-family: sans-serif
+
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+#one { /* button line up */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse; 
 }
 
 
+.footer-one {
+    font-family: sans-serif;
+    color: #F9FAF8;
+}
+
+
+
+
+@media all and (max-width: 500px) { .header-ptwo{
+    display:flex;
+    flex-direction: column;
+    gap:40px;
+}
+}
+    
